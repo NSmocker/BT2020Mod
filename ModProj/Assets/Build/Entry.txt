@@ -1,0 +1,101 @@
+
+
+
+
+
+-- these are built-in global funtion you can call directly
+--[[
+-- check this: https://github.com/Tencent/xLua/blob/master/Assets/XLua/Doc/Faq_EN.md
+function IsNullOrDestroyed(obj)
+    return obj == nil or obj:IsNull()
+end
+
+-- some physicsunits is pooled, such as flyobj(bullet/fireball...)
+function IsNullOrRecycled(pu)
+    return pu == nil or pu:IsNull() or pu.gameObject.activeSelf == false
+end
+
+-- scheduler is pooled, so if you're referencing an instance which is finished
+-- then you need check it's being reuse by others or not
+-- I recommend just taking the id of scheduler, so that you'll never encounter this issue
+function IsNullOrOwnerChanged(scher, owner)
+    return scher == nil or scher.owner ~= owner
+end
+
+function ResetTransform(trans)
+    trans.localPosition = UE.Vector3.zero
+    trans.localRotation = UE.Quaternion.identity
+    trans.localScale = UE.Vector3.one
+end
+]]
+
+
+-- you can receive notification of Enable, if you want
+--[[
+local function OnEnable(isEnable)
+    if isEnable then
+        print("OnEnable")
+    else
+        print("OnDisable")
+    end
+end
+
+CL.ModManager.SaveLuaEnableFunc(OnEnable)
+]]
+
+
+
+-- exmpale: SetLayerAll(transform, CL.LayerDefine.EnvLayer.value)
+function SetLayerAll(trans, layer)
+    if trans == nil then
+        return
+    end
+    trans.gameObject.layer = layer
+    for i=0, trans.childCount-1, 1 do
+        SetLayerAll(trans:GetChild(i), layer)
+    end
+end
+
+
+
+
+HitInfoConfig = CL.GameDataMgr.GetData(typeof(CL.HitInfoConfig))
+TextConfig = CL.GameDataMgr.GetData(typeof(CL.TextConfig)) 
+
+local function AddTextItem(name, array)
+    local newItem = CL.TextConfig.TextConfigItem()
+    newItem.Name = name
+    --newItem.Text = {"Test"}
+    defaultLang = array[1] or ""
+    for i=1,CL.LanguageMgr.SupportLanguages.Length,1 do
+        if array[i] == nil then
+            array[i] = arrayZero
+            --print("Set" .. i, defaultLang)
+        end
+    end
+    newItem.Text = array
+    TextConfig:AddData(newItem)
+end
+
+local function AddStoreItemTemplate(weaponName, dependWeapon, name, desc)
+    AddTextItem(weaponName, {name})
+    AddTextItem(weaponName .. "_Desc", {desc})
+
+    storeItem = CL.UnlockContentItem()
+    storeItem.name = weaponName
+    storeItem.dependItemName = dependWeapon
+    storeItem.iconName = weaponName
+    storeItem.contentType = CL.UnlockContentConfig.UnlockContentType.Weapon
+    storeItem.unlockRequireCoinNum = 1
+    CL.UnlockContentConfig.AddItem(storeItem)
+end
+
+local function AddWaveTemplate(waveName, waveAddressable)
+    local playableWaves = CL.RoleGroupTable.GetConfig().playableWaves
+    local wave = CL.ResourceMgr.Instantiate(waveAddressable)
+    wave.name = waveName
+    playableWaves:Add(wave)
+end
+
+-- Example of adding a wave to the cheat menu.
+-- AddWaveTemplate("Your wave name here!", "Wave/WMD_SomeWaveAddressable")

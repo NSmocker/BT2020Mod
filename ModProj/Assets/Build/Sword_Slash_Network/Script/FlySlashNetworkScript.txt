@@ -1,0 +1,76 @@
+
+local FlySlash = {
+    isHit = false,
+}
+
+function FlySlash:OnTrigger(pu, other)
+    if not other or IsNullOrDestroyed(other) then
+        return
+    end
+    
+    if self.destroyOnHit ~= 0 and self.isHit then
+        return
+    end
+    
+    self.isHit = true
+    
+    local fo = CL.FlyObject.GetFlyObj(other.transform)
+    if not IsNullOrDestroyed(fo) then
+        return
+    end
+
+    CL.InteractTrigger.BeginScanDmg()
+    CL.InteractTrigger.ApplyHitScanDamage(other, self.host, self.host.rb, self.host.col, self.host.trans.forward, self.host.camp)
+    CL.InteractTrigger.EndHitScan()
+   
+    if self.destroyOnHit ~= 0 then
+        self.host:PlayImpact(self.host.trans.position, self.host.trans.forward)
+        self.host:OnFinish()
+    end
+end
+
+function FlySlash:OnTriggerWithStaticScene(other)
+    if self.destroyOnHit ~= 0 and self.isHit then
+        return
+    end
+    
+    self.isHit = true
+    
+    if self.destoryWhenHitEnv ~= 0 then
+        self.host:PlayImpact(self.host.trans.position, self.host.trans.forward)
+        self.host:OnFinish()
+    end
+end
+
+function FlySlash:OnTriggerWithRole(fc, col)
+    if self.destroyOnHit ~= 0 and self.isHit then
+        return
+    end
+    
+    self.isHit = true
+    
+    CL.InteractTrigger.BeginScanDmg()
+    CL.InteractTrigger.ApplyHitScanDamage(col, self.host, self.host.rb, self.host.col, self.host.trans.forward, self.host.camp)
+    CL.InteractTrigger.EndHitScan()
+    
+    if self.destroyOnHit ~= 0 then
+        self.host:PlayImpact(self.host.trans.position, self.host.trans.forward)
+        self.host:OnFinish()
+    end
+end
+
+function FlySlash:OnCollisionWithRole(fc, mu, rb, col, point, normal, relaVel)
+
+end
+
+function FlySlash:OnTriggerWithPlayerHand(col, hand)
+end
+
+function FlySlash:OnTriggerWithPlayer(collision, player)
+end
+
+function FlySlash:ResetState()
+    self.isHit = false
+end
+
+return Class(nil, nil, FlySlash)
