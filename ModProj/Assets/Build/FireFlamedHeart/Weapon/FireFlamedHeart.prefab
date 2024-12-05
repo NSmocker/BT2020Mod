@@ -192,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 4776852020622854601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.162, y: -3.0991, z: 20.112}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.695134, y: 0.695134, z: 0.695134}
   m_Children:
   - {fileID: 4776852020199585692}
   - {fileID: 8165211713520127735}
@@ -211,7 +211,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4776852020622854601}
   serializedVersion: 2
-  m_Mass: 6
+  m_Mass: 8
   m_Drag: 0.5
   m_AngularDrag: 1
   m_UseGravity: 1
@@ -241,10 +241,10 @@ MonoBehaviour:
   guardPoints: []
   linearForce: 20000
   linearDamper: 500
-  angularForce: 14000
+  angularForce: 15000
   angularDamper: 500
-  singleHandSpeed: 0.9
-  twoHandSpeed: 1
+  singleHandSpeed: 0.45
+  twoHandSpeed: 0.8
   allowSecondHand: 1
   beAbleToShowGrab: 1
   enableAutoTickTwoHand: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   geos:
-  - geoFwdDis: 1.48
+  - geoFwdDis: 1
     thickness: 0.02
     geoWidth: 0.23
     geoPoint: {x: 0, y: 0, z: 0.28}
@@ -338,7 +338,7 @@ MonoBehaviour:
     isBlade: 1
   - geoFwdDis: 0.12
     thickness: 0.015
-    geoWidth: 1.36
+    geoWidth: 1
     geoPoint: {x: 0.01, y: 0, z: 0.94}
     geoForward: {x: 1, y: 0, z: 0}
     geoThick: {x: 0, y: 1, z: 0}
@@ -356,7 +356,7 @@ MonoBehaviour:
     isBlade: 1
   - geoFwdDis: 0.12
     thickness: 0.015
-    geoWidth: 1.36
+    geoWidth: 1
     geoPoint: {x: -0.01, y: 0, z: 0.94}
     geoForward: {x: -1, y: 0, z: 0}
     geoThick: {x: 0, y: 1, z: 0}
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4776852020622854597}
   inertiaTensor: {x: 0.8, y: 0.8, z: 0.1}
-  centerMass: {x: 0, y: 0, z: 0}
+  centerMass: {x: 0, y: 0, z: 0.42}
 --- !u!114 &573903485272796083
 MonoBehaviour:
   m_ObjectHideFlags: 0
