@@ -1,0 +1,20 @@
+local table = {
+
+}
+
+function table:Start()
+    print("Hello From Object Detector")  
+    
+end
+
+
+
+function table:OnTriggerEnter(collider)
+     
+   self.DebugText.text = self.DebugText.text.."\n".."Objects: "..collider.gameObject.name .."\n"  
+   print("Objects: "..collider.gameObject.name)
+  
+
+     
+end
+return Class(nil, nil, table)

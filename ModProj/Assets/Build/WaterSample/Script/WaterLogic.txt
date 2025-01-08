@@ -1,0 +1,52 @@
+local WaterLogic = 
+{
+ 
+    
+}
+function WaterLogic:Start()
+    print("Hello From Water Logic")  
+    
+end
+
+
+function WaterLogic:OnTriggerEnter(collider)
+     
+    print("Objects: "..collider.gameObject.name.."Entered")
+    self.DebugText.text= self.DebugText.text..collider.gameObject.name .."\n"
+    local rb = collider.gameObject:GetComponent("Rigidbody")
+    rb.useGravity = false
+     
+end
+function WaterLogic:OnTriggerExit(collider)
+    local rb = collider.gameObject:GetComponent("Rigidbody")
+    rb.useGravity = true
+    print("Objects: "..collider.gameObject.name.."Go out")
+end
+
+
+
+
+function WaterLogic:OnTriggerStay(collider)
+     
+     
+    
+   
+   
+ end
+
+   
+       
+    
+    
+    
+ 
+
+
+
+    
+    
+
+
+
+
+return Class(nil, nil, WaterLogic)

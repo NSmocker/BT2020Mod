@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: 7fedd90403101634f85f519bfd64ced7
+  m_GUID: 0036846cdd168a04aa7cbc60fb294b66
   m_SerializeEntries:
   - m_GUID: 2984de54a2f121146a48075682699fe6
     m_Address: LuaScript/SilverEchoGames_AvatarSoundPlayerScript
@@ -73,8 +73,20 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEchoGames_LookAtTest
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 37fa341fe1d01a44abb85893cd734319
+    m_Address: LuaScript/SilverEchoGames_SpawnNPC
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f389301e0238a414d83cd24f52feb419
+    m_Address: LuaScript/SilverEchoGames_TriggerEventOnTriggerZone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cb40d8be705658d47b79ae19d12012ca
+    m_Address: LuaScript/SilverEchoGames_WaterLogic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 7c2a9f84730cf0543a7dbf0e8f4afc94
-    m_Address: ICon/SilverEchoGames_Grave of Hero
+    m_Address: ICon/SilverEchoGames_WaterSample
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 9efdf7bc9ac86a04191a57a11bb8f210
@@ -89,28 +101,40 @@ MonoBehaviour:
     m_Address: Audio/Sound/SilverEchoGames_FireCracking
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: fa21c1cc3771a314fa87dade8735314f
+    m_Address: Audio/Sound/SilverEchoGames_Metal-hits-Sound-Effect-_SFX_
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 6b2e81acf6066f54b8b4edffc9018697
     m_Address: Audio/Sound/SilverEchoGames_normal_fight_tomb_loop
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 3047e397ad84ae745981830cb6768109
+    m_Address: Audio/Sound/SilverEchoGames_StoneSlide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 8636005f5d3853e41a7ace74ac35d269
-    m_Address: Config/SilverEchoGames_29DungeonScene
+    m_Address: Config/SilverEchoGames_WaterSample
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4a4bec3870bcd241ac415f20dfd0d7e
+    m_Address: SilverEchoGames_WaterSample/LightingData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 58dc17f3a1f8af4498a7d1cbe83ace2c
+    m_Address: SilverEchoGames_WaterSample/ReflectionProbe-0
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 47d1d8da559b55544b978617de2c00ef
-    m_Address: SilverEchoGames_29DungeonScene
+    m_Address: SilverEchoGames_WaterSample
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 55653c56c8432504f93e3f371b4d924c
     m_Address: Entry
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: f389301e0238a414d83cd24f52feb419
-    m_Address: LuaScript/SilverEchoGames_TriggerEventOnTriggerZone
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 37fa341fe1d01a44abb85893cd734319
-    m_Address: LuaScript/SilverEchoGames_SpawnNPC
+  - m_GUID: 3079b980ee44ee04db5987503529f5d1
+    m_Address: LuaScript/SilverEchoGames_AllObjects
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

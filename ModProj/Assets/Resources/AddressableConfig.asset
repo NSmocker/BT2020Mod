@@ -27,4 +27,4 @@ MonoBehaviour:
   prefix: SilverEchoGames_
   addressablePaths:
   - Assets/Build/Common
-  - Assets/Build/29DungeonScene
+  - Assets/Build/WaterSample
