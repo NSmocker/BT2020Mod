@@ -137,6 +137,10 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEchoGames_AllObjects
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: a258268957004fd4cb256ff5de061c0b
+    m_Address: Audio/Sound/SilverEchoGames_WaterSplash
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26cc198b6f316b347a0fe5276ff50b16, type: 2}
   m_SchemaSet:

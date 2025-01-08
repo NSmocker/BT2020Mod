@@ -15,12 +15,20 @@ function WaterLogic:OnTriggerEnter(collider)
     self.DebugText.text= self.DebugText.text..collider.gameObject.name .."\n"
     local rb = collider.gameObject:GetComponent("Rigidbody")
     rb.useGravity = false
+    rb.drag = 1
+    if(collider.gameObject.name == "PlayerArea") then 
+     self.WaterAudioSource.PlayOneShot(self.WaterAudioClip);
+    end
      
 end
 function WaterLogic:OnTriggerExit(collider)
     local rb = collider.gameObject:GetComponent("Rigidbody")
     rb.useGravity = true
+    rb.drag = 0
     print("Objects: "..collider.gameObject.name.."Go out")
+    if(collider.gameObject.name == "PlayerArea") then 
+        self.WaterAudioSource.PlayOneShot(self.WaterAudioClip);
+    end
 end
 
 
