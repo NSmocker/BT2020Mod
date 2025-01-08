@@ -1,0 +1,37 @@
+local TriggerEventOnTriggerZone = 
+{
+   
+}
+
+
+function TriggerEventOnTriggerZone:Start()
+    
+end
+
+
+
+
+function TriggerEventOnTriggerZone:OnTriggerEnter(collider)
+     
+     
+    
+    if collider.gameObject.name == "Key" then
+       self.WallAudioSource:PlayOneShot(self.WallAudioClip);
+       self.WallAudioSource:PlayOneShot(self.JawAudioClip);
+       collider.gameObject:SetActive(false);
+       self.wallGameObject:SetActive(false);
+       self.HeadAnimator:Play("Closed");
+       self.MyTrigger.enabled = false;
+       --todo down wall
+       --todo destroy key
+       --todo close jaw
+
+    end
+
+    
+
+     
+end
+
+
+return Class(nil, nil, TriggerEventOnTriggerZone)

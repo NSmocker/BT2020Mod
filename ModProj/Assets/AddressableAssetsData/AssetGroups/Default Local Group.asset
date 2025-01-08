@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: 00176953176fec847a7da50ad6ab9a80
+  m_GUID: 7fedd90403101634f85f519bfd64ced7
   m_SerializeEntries:
   - m_GUID: 2984de54a2f121146a48075682699fe6
     m_Address: LuaScript/SilverEchoGames_AvatarSoundPlayerScript
@@ -69,6 +69,10 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEchoGames_WeaponFlyObjBaseScript
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: d3f9fb5c9993cf24ab073e074660ceb2
+    m_Address: LuaScript/SilverEchoGames_LookAtTest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 7c2a9f84730cf0543a7dbf0e8f4afc94
     m_Address: ICon/SilverEchoGames_Grave of Hero
     m_ReadOnly: 0
@@ -79,6 +83,10 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 48c532a7d9002c0459bbb028910cc16d
     m_Address: Audio/Sound/SilverEchoGames_explore_tomb_loop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1c372e1988edbab47bce8b20c94303eb
+    m_Address: Audio/Sound/SilverEchoGames_FireCracking
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 6b2e81acf6066f54b8b4edffc9018697
@@ -95,6 +103,14 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 55653c56c8432504f93e3f371b4d924c
     m_Address: Entry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f389301e0238a414d83cd24f52feb419
+    m_Address: LuaScript/SilverEchoGames_TriggerEventOnTriggerZone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37fa341fe1d01a44abb85893cd734319
+    m_Address: LuaScript/SilverEchoGames_SpawnNPC
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
