@@ -1,0 +1,87 @@
+local table = 
+{
+     
+    
+}
+
+
+function table:Start()
+    print("Hello From Water Volume")  
+    local waterSphere = UE.GameObject.Find("WaterSphere")
+    if waterSphere ~= nil then
+        self.waterRender = waterSphere:GetComponent("Renderer")
+    end
+    print("water filter finded")
+end
+
+
+function table:OnTriggerEnter(collider)
+
+     
+  
+  
+    if(collider.gameObject.name == "HeadSphere") then 
+   
+   
+        if self.waterRender ~= nil then 
+            self.waterRender.enabled = true 
+        end--water render
+   
+   
+        if self.waterRender == nil then 
+            print("No waterRender in OnTriggerEnter") 
+        end--water render
+   
+       -- local rb = collider.gameObject:GetComponent("Rigidbody")
+       -- rb:AddForce(UE.Vector3.up*1000)
+
+        self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+        local mainRb = collider:GetComponentInParent("Rigidbody");
+        if mainRb ~= nil then
+           print("MainRb is "..mainRb.gameObject.name)
+        end
+        if mainRb == nil then
+            print("Main rb is not founded!")
+         end
+    end--collider headsphere
+    
+   
+
+
+end--trigger end
+
+
+
+
+
+
+
+
+
+
+   
+       
+function table:OnTriggerExit(collider)
+
+    
+    if(collider.gameObject.name == "HeadSphere") then 
+        self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+        if self.waterRender ~= nil then 
+            self.waterRender.enabled = false 
+        end--water render
+    end--collider headsphere
+    
+end--trigger end
+    
+    
+ 
+
+
+
+    
+    
+
+
+
+
+return Class(nil, nil, table)

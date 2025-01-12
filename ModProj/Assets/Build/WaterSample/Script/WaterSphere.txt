@@ -1,0 +1,36 @@
+local WaterSphere = 
+{
+ 
+    
+}
+
+function WaterSphere:Start()
+    local headSphere = UE.GameObject.Find("HeadSphere")
+    if headSphere ~= nil then
+        self.thisWaterSphere.transform.position = headSphere.transform.position
+        self.thisWaterSphere.transform.parent = headSphere.transform
+    end
+    local rendered = self.thisWaterSphere:GetComponent("Renderer")
+    rendered.enabled = false
+    print("Hello From Water Sphere")  
+    
+end
+
+
+
+   
+       
+    
+    
+    
+ 
+
+
+
+    
+    
+
+
+
+
+return Class(nil, nil, WaterSphere)
