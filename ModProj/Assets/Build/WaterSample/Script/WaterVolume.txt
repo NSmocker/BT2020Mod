@@ -6,6 +6,9 @@ local table =
 
 
 function table:Start()
+
+
+
     print("Hello From Water Volume")  
     local waterSphere = UE.GameObject.Find("WaterSphere")
     if waterSphere ~= nil then
@@ -31,15 +34,17 @@ end
 function table:OnTriggerEnter(collider)
 
      
-  
+    
   
     if(collider.gameObject.name == "HeadSphere") then 
    
    
         if self.waterRender ~= nil then 
             self.waterRender.enabled = true 
-            self.player.drag = 10
-            self.player.angularDrag = 10
+            self.player.drag = 0.5
+            self.player.angularDrag = 0.5
+            self.player.useGravity = false
+            self.WaterAudioSource:PlayOneShot(self.UnderWaterSound);
         end--water render
    
    
@@ -50,7 +55,7 @@ function table:OnTriggerEnter(collider)
        -- local rb = collider.gameObject:GetComponent("Rigidbody")
        -- rb:AddForce(UE.Vector3.up*1000)
 
-        self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+        --self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
        
          
 
@@ -58,7 +63,7 @@ function table:OnTriggerEnter(collider)
     end--collider headsphere
     
     
-   
+    
    
 
 
@@ -79,29 +84,21 @@ function table:OnTriggerExit(collider)
 
     
     if(collider.gameObject.name == "HeadSphere") then 
-        self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+        --self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
         if self.waterRender ~= nil then 
             self.waterRender.enabled = false 
             self.player.drag = 0
             self.player.angularDrag = 0
+            self.player.useGravity = true
+            self.WaterAudioSource:Stop();
         end--water render
     end--collider headsphere
     
 end--trigger end
     
-    
+--self.player :AddForce(UE.Vector3.up*10000,UE.ForceMode.Force)
 function table:OnTriggerStay(collider)
 
-    if(collider.gameObject.name == "HeadSphere") then 
-        local rightHand = self.player.hands[0]
-        local aButton = rightHand.inputs[CL.VRTKInputButton.ButtonType.ButtonOne]
-        
-        if aButton.isPressed then
-            self.player :AddForce(UE.Vector3.up*10000,UE.ForceMode.Force)
-        end
-        
-
-    end--collider headsphere
 
     
     
