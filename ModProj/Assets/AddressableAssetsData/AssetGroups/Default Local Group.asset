@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: d81e8950a824f074587f535af0e2b414
+  m_GUID: b1b4b81723c9ad0489babe8962dbc72d
   m_SerializeEntries:
   - m_GUID: 2984de54a2f121146a48075682699fe6
     m_Address: LuaScript/SilverEchoGames_AvatarSoundPlayerScript
@@ -69,88 +69,80 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEchoGames_WeaponFlyObjBaseScript
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 3079b980ee44ee04db5987503529f5d1
+  - m_GUID: 9239f02e09ce7f7479b90c9903babffe
     m_Address: LuaScript/SilverEchoGames_AllObjects
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: d3f9fb5c9993cf24ab073e074660ceb2
+  - m_GUID: 1c6f55a7b7a79ea45b9b7ccf3633dde9
     m_Address: LuaScript/SilverEchoGames_LookAtTest
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 37fa341fe1d01a44abb85893cd734319
+  - m_GUID: 5227353135cda28408383f1e53f99223
     m_Address: LuaScript/SilverEchoGames_SpawnNPC
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: f389301e0238a414d83cd24f52feb419
+  - m_GUID: e1adab211e9019341989d53b485ed1d6
     m_Address: LuaScript/SilverEchoGames_TriggerEventOnTriggerZone
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 6f76b0d7338f22b4ba7cc50538541720
+  - m_GUID: 475d94f7fad697240949b6bdc4a38bec
     m_Address: LuaScript/SilverEchoGames_WaterForEnviroment
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 0d65e2355733c634980a3f4f2fc173c9
+  - m_GUID: 2ae082124c04ea74d878bb18b5fa2554
     m_Address: LuaScript/SilverEchoGames_WaterSphere
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 7c2a9f84730cf0543a7dbf0e8f4afc94
+  - m_GUID: f450a46b5a50d8d4ea2c1d7e4750eb46
+    m_Address: LuaScript/SilverEchoGames_WaterVolume
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 66ac41127b4bb4e449a3c7c4cb67550f
     m_Address: ICon/SilverEchoGames_WaterSample
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 9efdf7bc9ac86a04191a57a11bb8f210
+  - m_GUID: a4f4a26a851079c488a672afb30b5298
     m_Address: Audio/Sound/SilverEchoGames_dungeon_b1
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 48c532a7d9002c0459bbb028910cc16d
+  - m_GUID: 83c43ea995674a845945f7660e1af10a
     m_Address: Audio/Sound/SilverEchoGames_explore_tomb_loop
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 1c372e1988edbab47bce8b20c94303eb
+  - m_GUID: 8ad9916b691adcb4f9f853032472ad6e
     m_Address: Audio/Sound/SilverEchoGames_FireCracking
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: fa21c1cc3771a314fa87dade8735314f
+  - m_GUID: 3f43a2a2b3f42934eb402953e8d9c8a4
     m_Address: Audio/Sound/SilverEchoGames_Metal-hits-Sound-Effect-_SFX_
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 6b2e81acf6066f54b8b4edffc9018697
+  - m_GUID: 5096dfb75b0ce914f8c93e1f47773640
     m_Address: Audio/Sound/SilverEchoGames_normal_fight_tomb_loop
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 3047e397ad84ae745981830cb6768109
+  - m_GUID: ee79425147007e74caf844d3e53e2a9d
     m_Address: Audio/Sound/SilverEchoGames_StoneSlide
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: a258268957004fd4cb256ff5de061c0b
+  - m_GUID: 1918fba7df1377344901da1b364b6456
+    m_Address: Audio/Sound/SilverEchoGames_UnderWaterSound
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d3b2c47636820e04f9edc8e854357b77
     m_Address: Audio/Sound/SilverEchoGames_WaterSplash
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 8636005f5d3853e41a7ace74ac35d269
-    m_Address: Config/SilverEchoGames_WaterSample
+  - m_GUID: 4f8fc88a216a57340ab17ab800f066a8
+    m_Address: Config/SilverEchoGames_Spyro3MiddayGardens
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: b4a4bec3870bcd241ac415f20dfd0d7e
-    m_Address: SilverEchoGames_WaterSample/LightingData
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 58dc17f3a1f8af4498a7d1cbe83ace2c
-    m_Address: SilverEchoGames_WaterSample/ReflectionProbe-0
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 47d1d8da559b55544b978617de2c00ef
-    m_Address: SilverEchoGames_WaterSample
+  - m_GUID: 1f824a4e57562fc41a1e08ac91b7a44d
+    m_Address: SilverEchoGames_Spyro3MiddayGardens
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 55653c56c8432504f93e3f371b4d924c
     m_Address: Entry
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 62dccd054485a804aaa577f1d26478d3
-    m_Address: LuaScript/SilverEchoGames_WaterVolume
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 8f65b38d99d69d844843b34271722dda
-    m_Address: Audio/Sound/SilverEchoGames_UnderWaterSound
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

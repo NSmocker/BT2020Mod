@@ -1,0 +1,115 @@
+local table = 
+{
+     
+    
+}
+
+
+function table:Start()
+
+
+
+    print("Hello From Water Volume")  
+    local waterSphere = UE.GameObject.Find("WaterSphere")
+    if waterSphere ~= nil then
+        self.waterRender = waterSphere:GetComponent("Renderer")
+    end
+    
+    print("Try to find main player rb")
+    self.player =  CL.InteractCharacter.PlayerInstance.capsuleRB
+    
+    if  self.player == nil then
+        print("Main player not finded")
+        return
+    end
+
+    if  self.player  ~= nil then
+        print("Main player rb finded")
+       -- self.player :AddForce(UE.Vector3.up*10000000)
+    end
+    print("water filter finded")
+end
+
+
+function table:OnTriggerEnter(collider)
+
+     
+    
+  
+    if(collider.gameObject.name == "HeadSphere") then 
+   
+   
+        if self.waterRender ~= nil then 
+            self.waterRender.enabled = true 
+            self.player.drag = 0.5
+            self.player.angularDrag = 0.5
+            self.player.useGravity = false
+            self.WaterAudioSource:PlayOneShot(self.UnderWaterSound);
+        end--water render
+   
+   
+        if self.waterRender == nil then 
+            print("No waterRender in OnTriggerEnter") 
+        end--water render
+   
+       -- local rb = collider.gameObject:GetComponent("Rigidbody")
+       -- rb:AddForce(UE.Vector3.up*1000)
+
+        --self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+       
+         
+
+
+    end--collider headsphere
+    
+    
+    
+   
+
+
+end--trigger end
+
+
+
+
+
+
+
+
+
+
+   
+       
+function table:OnTriggerExit(collider)
+
+    
+    if(collider.gameObject.name == "HeadSphere") then 
+        --self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+        if self.waterRender ~= nil then 
+            self.waterRender.enabled = false 
+            self.player.drag = 0
+            self.player.angularDrag = 0
+            self.player.useGravity = true
+            self.WaterAudioSource:Stop();
+        end--water render
+    end--collider headsphere
+    
+end--trigger end
+    
+--self.player :AddForce(UE.Vector3.up*10000,UE.ForceMode.Force)
+function table:OnTriggerStay(collider)
+
+
+    
+    
+end
+
+
+
+    
+    
+
+
+
+
+return Class(nil, nil, table)

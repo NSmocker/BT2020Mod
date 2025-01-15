@@ -1,0 +1,85 @@
+local table = 
+{
+     
+    
+}
+
+
+function table:Start()
+
+
+
+    print("Hello From Water For Enviroment")  
+    
+end
+
+
+function table:OnTriggerEnter(collider)
+
+    
+    if(self.WaterAudioSource.isPlaying == false or self.WaterAudioSource.time >= 0.1) then
+    self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+    end
+
+
+    local rb = collider.gameObject:GetComponent("Rigidbody")
+    if rb ~= nil then
+       print("rb finded")
+       rb.useGravity=false
+    end
+    
+  
+    
+    
+    
+   
+
+
+end--trigger end
+
+
+
+
+
+
+
+
+
+
+   
+       
+function table:OnTriggerExit(collider)
+
+    
+    if(self.WaterAudioSource.isPlaying == false or self.WaterAudioSource.time >= 0.1) then
+        self.WaterAudioSource:PlayOneShot(self.WaterAudioClip);
+    end
+    local rb = collider.gameObject:GetComponent("Rigidbody")
+    if rb ~= nil then
+       print("rb finded")
+       rb.useGravity=true
+    end
+   
+
+
+
+    
+    
+end--trigger end
+    
+--self.player :AddForce(UE.Vector3.up*10000,UE.ForceMode.Force)
+function table:OnTriggerStay(collider)
+
+    
+    
+end
+
+
+
+    
+    
+
+
+
+
+return Class(nil, nil, table)

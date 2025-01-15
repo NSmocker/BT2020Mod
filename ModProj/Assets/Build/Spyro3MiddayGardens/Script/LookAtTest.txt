@@ -1,0 +1,34 @@
+local LookAtTest = {}
+
+
+function LookAtTest:Awake()
+    self.scheId = nil;
+    self.speed =1;
+    self.schedulerInterval = 0.02;
+    self.timeBeforeStarting = -1;
+    self.timeBeforeStoping = 0;
+end
+
+function LookAtTest:Start()
+
+    local mainCharacterCamera = CS.UnityEngine.Camera.main;
+    print("Camera: "..mainCharacterCamera.name)
+    self.scheId = CL.Scheduler.Create({},
+    function(sche,t,s)
+    self.transform.LookAt(mainCharacterCamera.transform.position);
+    end
+    ,self.schedulerInterval,self.timeBeforeStoping,self.timeBeforeStarting)
+    :SetUpdateChannel(CL.Scheduler.UpdateChannel.FixedUpdate)
+    :IngonreTimeScale(true)
+    :SetOnTop(
+        function(sche)
+            print("ImStopping now")
+        end
+    ).actionId
+end
+
+function LookAtTest:OnDestroy()
+    CL.Scheduler.RemoveSchedule(self.scheId)
+end
+
+return Class(nil,nil,LookAtTest)
