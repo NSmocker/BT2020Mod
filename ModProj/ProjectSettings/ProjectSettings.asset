@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.SilverEchoGames.SilverEchoGames_WaterSample
+    Android: com.SilverEchoGames.SilverEchoGames_Spyro3MiddayGurdens
     Standalone: com.SilverEchoGames.SilverEchoGames-GraveOfHero
   buildNumber:
     Standalone: 0
