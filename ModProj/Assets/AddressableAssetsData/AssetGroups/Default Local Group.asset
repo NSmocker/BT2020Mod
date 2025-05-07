@@ -17,128 +17,68 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: d81e8950a824f074587f535af0e2b414
   m_SerializeEntries:
-  - m_GUID: 2984de54a2f121146a48075682699fe6
-    m_Address: LuaScript/SilverEchoGames_AvatarSoundPlayerScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 3447a2c7fcc76f2408690e1049e8a11e
-    m_Address: LuaScript/SilverEchoGames_BulletScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6defddeeb2d67634387478302b40808a
-    m_Address: LuaScript/SilverEchoGames_BulletWithBlowUpScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 36e2c661b0ad1c14fafd4c0955696ada
-    m_Address: LuaScript/SilverEchoGames_ClothBoneToolScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 3576ef4a941c6ce459ec7edab98b6502
-    m_Address: LuaScript/SilverEchoGames_FlySpellBaseScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: fe9e8989fcc1be84da16b173b04bbdb3
-    m_Address: LuaScript/SilverEchoGames_JumpForwardScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 9cecc510ebfac284cb17271941dda0af
-    m_Address: LuaScript/SilverEchoGames_ModWaveScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6e8a4e9951192804faa0534be8b18c47
-    m_Address: LuaScript/SilverEchoGames_NoCheatScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 8ac7202d6449c554b8ac839e591ee111
-    m_Address: LuaScript/SilverEchoGames_RestoreRoleAttrScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 2623d6cc0169c4241891f6a73f6bbd23
-    m_Address: LuaScript/SilverEchoGames_SpellBaseScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 56abe59302184b74aa5fdd05d5d577b2
-    m_Address: LuaScript/SilverEchoGames_SpellThrowScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 4b6c813988c829c4f86bccf79faa3b0c
-    m_Address: LuaScript/SilverEchoGames_TowerBaseScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a4883fa9c6528ae41a40863158f4795e
-    m_Address: LuaScript/SilverEchoGames_WeaponFlyObjBaseScript
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 3079b980ee44ee04db5987503529f5d1
-    m_Address: LuaScript/SilverEchoGames_AllObjects
+    m_Address: LuaScript/MyTag_AllObjects
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: d3f9fb5c9993cf24ab073e074660ceb2
-    m_Address: LuaScript/SilverEchoGames_LookAtTest
+    m_Address: LuaScript/MyTag_LookAtTest
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 37fa341fe1d01a44abb85893cd734319
-    m_Address: LuaScript/SilverEchoGames_SpawnNPC
+    m_Address: LuaScript/MyTag_SpawnNPC
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: f389301e0238a414d83cd24f52feb419
-    m_Address: LuaScript/SilverEchoGames_TriggerEventOnTriggerZone
+    m_Address: LuaScript/MyTag_TriggerEventOnTriggerZone
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 6f76b0d7338f22b4ba7cc50538541720
-    m_Address: LuaScript/SilverEchoGames_WaterForEnviroment
+    m_Address: LuaScript/MyTag_WaterForEnviroment
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 0d65e2355733c634980a3f4f2fc173c9
-    m_Address: LuaScript/SilverEchoGames_WaterSphere
+    m_Address: LuaScript/MyTag_WaterSphere
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 7c2a9f84730cf0543a7dbf0e8f4afc94
-    m_Address: ICon/SilverEchoGames_WaterSample
+    m_Address: ICon/MyTag_MyModeName
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 9efdf7bc9ac86a04191a57a11bb8f210
-    m_Address: Audio/Sound/SilverEchoGames_dungeon_b1
+    m_Address: Audio/Sound/MyTag_dungeon_b1
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 48c532a7d9002c0459bbb028910cc16d
-    m_Address: Audio/Sound/SilverEchoGames_explore_tomb_loop
+    m_Address: Audio/Sound/MyTag_explore_tomb_loop
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 1c372e1988edbab47bce8b20c94303eb
-    m_Address: Audio/Sound/SilverEchoGames_FireCracking
+    m_Address: Audio/Sound/MyTag_FireCracking
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: fa21c1cc3771a314fa87dade8735314f
-    m_Address: Audio/Sound/SilverEchoGames_Metal-hits-Sound-Effect-_SFX_
+    m_Address: Audio/Sound/MyTag_Metal-hits-Sound-Effect-_SFX_
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 6b2e81acf6066f54b8b4edffc9018697
-    m_Address: Audio/Sound/SilverEchoGames_normal_fight_tomb_loop
+    m_Address: Audio/Sound/MyTag_normal_fight_tomb_loop
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 3047e397ad84ae745981830cb6768109
-    m_Address: Audio/Sound/SilverEchoGames_StoneSlide
+    m_Address: Audio/Sound/MyTag_StoneSlide
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: a258268957004fd4cb256ff5de061c0b
-    m_Address: Audio/Sound/SilverEchoGames_WaterSplash
+    m_Address: Audio/Sound/MyTag_WaterSplash
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 8636005f5d3853e41a7ace74ac35d269
-    m_Address: Config/SilverEchoGames_WaterSample
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: b4a4bec3870bcd241ac415f20dfd0d7e
-    m_Address: SilverEchoGames_WaterSample/LightingData
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 58dc17f3a1f8af4498a7d1cbe83ace2c
-    m_Address: SilverEchoGames_WaterSample/ReflectionProbe-0
+    m_Address: Config/MyTag_MyModeName
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 47d1d8da559b55544b978617de2c00ef
-    m_Address: SilverEchoGames_WaterSample
+    m_Address: MyTag_MyModeName
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 55653c56c8432504f93e3f371b4d924c
@@ -146,7 +86,7 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 62dccd054485a804aaa577f1d26478d3
-    m_Address: LuaScript/SilverEchoGames_WaterVolume
+    m_Address: LuaScript/MyTag_WaterVolume
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 8f65b38d99d69d844843b34271722dda

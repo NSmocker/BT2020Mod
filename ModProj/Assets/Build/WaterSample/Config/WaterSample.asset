@@ -15,9 +15,9 @@ MonoBehaviour:
   loadOnSpawn: 0
   storeItemInfo: []
   sceneModInfo:
-  - sceneName: SilverEchoGames_WaterSample
-    name: Water Sample
-    desc: Water Sample
+  - sceneName: MyTag_MyModeName
+    name: MyModeName
+    desc: Some text
     supportedMultiplayer: 0
     mutiplayerConfig:
       maxPlayers: 0
